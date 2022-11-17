@@ -108,10 +108,12 @@ refactorings and so on.
 
 Here are some more rules you should try to follow:
 
- 1. Never commit when the tests are failing
- 2. Only enable one test at a time
+ 1. Never commit when the tests are failing.
+ 2. Only enable one test at a time.
  3. Try to write the smallest amount of logic needed to make the newly enabled
-    test to pass
+    test to pass. This means you should not deliver the whole solution in a single
+    commit but rather in a stepwise fashion were the solutions grows and evolves as
+    you enable more and more of the tests.
  4. After getting a test to pass, it should never fail again. Nor should it be
     marked as skipped.
 
