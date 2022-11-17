@@ -81,6 +81,14 @@ Ran all test suites.
 When all tests are passing, you are done.
 
 
+## Getting started
+
+In order to get started you make a clone or copy of [the repository hosting this
+README file](.). You also need to have [git](https://git-scm.com/) and [the
+npm](https://www.npmjs.com/) command line utility installed on your computer.
+You many use any code editor or IDE that you like.
+
+
 ## Delivery
 
 Your solution should be delivered as a git repository, either hosted somewhere
