@@ -33,9 +33,9 @@ Your job is to work in small steps, enabling one test at a time and implement
 the smallest amount of logic to pass the newly enabled test. To enable a test,
 simply replace `test.skip` with `test`. You can run the tests in whatever way
 you like. If you are using an IDE, it is probably possible to run the tests
-directly from there. Otherwise, you can run the test from the command line using
-the command below (assuming your current working directory is at [the root of
-the repository](./)):
+directly from there. Otherwise, you can run the tests from the command line
+using the command below (assuming your current working directory is at [the root
+of the repository](./)):
 
 ```bash
 npm test
