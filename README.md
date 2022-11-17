@@ -90,7 +90,7 @@ solution by e-mail, it is best to zip the repository in order to reduce the
 likelihood of the message being stopped by spam filters.
 
 
-# Rules
+## Rules
 
 In order to follow how you worked your way to the final solution **there should
 be at least one commit per enabled test**. Since there are seven tests in
