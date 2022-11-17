@@ -129,7 +129,10 @@ evaluate it from a couple of perspectives, such as:
  4. Extensibility
 
 However, we will also look at the commit history to see how you worked your way
-to the solution. Please take care to make each commit a cohesive piece of change.
+to the solution. Please take care to make each commit a cohesive piece of
+change. The point of the assignment is just as much about evaluating your
+ability to deliver a solution as it is about evaluating your ability grow and
+evolve a solution over time without breaking existing behavior.
 
 
 ## Final Notes
