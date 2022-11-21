@@ -8,7 +8,7 @@ test("produces verse for 99 bottles", () => {
       "98 bottles of beer on the wall.\n"
   );
 });
-test.skip("produces verse for 98 bottles", () => {
+test("produces verse for 98 bottles", () => {
   expect(verse(98)).toBe(
     "" +
       "98 bottles of beer on the wall, 98 bottles of beer.\n" +

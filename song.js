@@ -2,13 +2,16 @@ function song() {}
 
 function verses() {}
 
-function verse() {
-  // This feels exceedingly silly, but hey,
-  // if it returns the 99 verse on ANY input ... ¯\_(ツ)_/¯
+function verse(n) {
+  // Basic type checking
+  if (!Number.isInteger(n) || n > 99 || n < 0) {
+    throw new Error(`Expected parameter to be integer, got ${typeof n}`);
+  }
+
   return (
-    "99 bottles of beer on the wall, 99 bottles of beer.\n" +
+    `${n} bottles of beer on the wall, ${n} bottles of beer.\n` +
     "Take one down and pass it around.\n" +
-    "98 bottles of beer on the wall.\n"
+    `${n - 1} bottles of beer on the wall.\n`
   );
 }
 
