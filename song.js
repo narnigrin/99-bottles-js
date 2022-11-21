@@ -1,4 +1,6 @@
-function song() {}
+function song() {
+  return verses(99, 0);
+}
 
 function verses(from, to) {
   // Let's check we didn't get something silly

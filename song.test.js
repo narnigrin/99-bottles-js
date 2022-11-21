@@ -56,7 +56,7 @@ test("produces several verses", () => {
       "96 bottles of beer on the wall.\n"
   );
 });
-test.skip("produces whole song", () => {
+test("produces whole song", () => {
   expect(song()).toBe(
     "" +
       "99 bottles of beer on the wall, 99 bottles of beer.\n" +
