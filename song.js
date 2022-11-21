@@ -8,12 +8,15 @@ function verse(n) {
     throw new Error(`Expected parameter to be integer, got ${typeof n}`);
   }
 
-  const nBottles = (number) =>
-    number === 1 ? "1 bottle" : `${number} bottles`;
+  const nBottles = (number) => {
+    if (number === 0) return `No more bottles`;
+    else if (number === 1) return "1 bottle";
+    else return `${number} bottles`;
+  };
 
   return (
-    `${n} bottles of beer on the wall, ${n} bottles of beer.\n` +
-    "Take one down and pass it around.\n" +
+    `${nBottles(n)} of beer on the wall, ${nBottles(n)} of beer.\n` +
+    `Take ${n > 1 ? "one" : "it"} down and pass it around.\n` +
     `${nBottles(n - 1)} of beer on the wall.\n`
   );
 }
