@@ -32,7 +32,7 @@ test("produces verse for 1 bottle", () => {
       "No more bottles of beer on the wall.\n"
   );
 });
-test.skip("produces verse for 0 bottles", () => {
+test("produces verse for 0 bottles", () => {
   expect(verse(0)).toBe(
     "" +
       "No more bottles of beer on the wall, no more bottles of beer.\n" +

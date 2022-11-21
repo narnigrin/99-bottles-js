@@ -10,15 +10,24 @@ function verse(n) {
     );
   }
 
+  // Helper to pluralise and otherwise fiddle with the "x bottles" string
   const nBottles = (number) => {
     if (number === 0) return `No more bottles`;
     else if (number === 1) return "1 bottle";
-    else return `${number} bottles`;
+    // Note: The below takes number modulo 100 to neatly handle the "0-1" case.
+    // % is remainder though; to get modulo, we must add the dividend and % again.
+    else return `${((number % 100) + 100) % 100} bottles`;
   };
 
+  // Pick the right string for the middle line
+  let middleLine =
+    n === 0
+      ? "Go to the store and buy some more.\n"
+      : `Take ${n > 1 ? "one" : "it"} down and pass it around.\n`;
+
   return (
-    `${nBottles(n)} of beer on the wall, ${nBottles(n)} of beer.\n` +
-    `Take ${n > 1 ? "one" : "it"} down and pass it around.\n` +
+    `${nBottles(n)} of beer on the wall, ${nBottles(n).toLowerCase()} of beer.\n` +
+    middleLine +
     `${nBottles(n - 1)} of beer on the wall.\n`
   );
 }
