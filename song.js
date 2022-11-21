@@ -5,7 +5,9 @@ function verses() {}
 function verse(n) {
   // Basic type checking
   if (!Number.isInteger(n) || n > 99 || n < 0) {
-    throw new Error(`Expected parameter to be integer, got ${typeof n}`);
+    throw new Error(
+      `Expected parameter to be integer between 0 and 99, got ${n} (${typeof n})`
+    );
   }
 
   const nBottles = (number) => {
