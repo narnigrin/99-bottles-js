@@ -40,7 +40,7 @@ test("produces verse for 0 bottles", () => {
       "99 bottles of beer on the wall.\n"
   );
 });
-test.skip("produces several verses", () => {
+test("produces several verses", () => {
   expect(verses(99, 97)).toBe(
     "" +
       "99 bottles of beer on the wall, 99 bottles of beer.\n" +

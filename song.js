@@ -1,6 +1,20 @@
 function song() {}
 
-function verses() {}
+function verses(from, to) {
+  // Let's check we didn't get something silly
+  if (!Number.isInteger(from) || !Number.isInteger(to) || from < to)
+    throw new Error(
+      "Expected two integer parameters, the first larger than or equal to the second"
+    );
+
+  let output = [];
+
+  for (let i = from; i >= to; i--) {
+    output.push(verse(i));
+  }
+
+  return output.join("\n");
+}
 
 function verse(n) {
   // Basic type checking
